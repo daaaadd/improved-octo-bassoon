@@ -2906,6 +2906,20 @@ if __name__ == '__main__':
     
     init_db()
     
+    if __name__ == '__main__':
+    print("=" * 60)
+    print("   🎰 ULTIMATE CASINO BOT v3.0")
+    print("=" * 60)
+    
+    init_db()
+    
+    # 👇 ВОТ СЮДА ВСТАВЛЯЙ ЭТОТ КОД
+    conn = get_db()
+    total_users = conn.execute('SELECT COUNT(*) FROM users').fetchone()[0]
+    conn.close()
+    print(f"👥 Всего пользователей в базе: {total_users}")
+    # 👆 ВОТ ДО СЮДА
+    
     threading.Thread(target=backup_loop, daemon=True).start()
     
     logger.info('=' * 55)
