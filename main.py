@@ -26,13 +26,12 @@ import sys
 # ============================================================
 # 🔧 КОНФИГУРАЦИЯ
 # ============================================================
-TOKEN = os.environ.get('8330930174:AAE78xbihnPhNns2QlCvv81msnAEmEAz-Zk', '')
-ADMIN_IDS = [int(id) for id in os.environ.get('6511166842', '').split(',') if id]
+TOKEN = '8330930174:AAE78xbihnPhNns2QlCvv81msnAEmEAz-Zk'  # ← ТВОЙ ТОКЕН
+ADMIN_IDS = [6511166842]  # ← ТВОЙ ID
 
 if not TOKEN:
     print("❌ ОШИБКА: Не задан BOT_TOKEN в переменных окружения!")
     sys.exit(1)
-
 # База данных
 DB_FILE = 'casino.db'
 
