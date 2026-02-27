@@ -26,8 +26,8 @@ import sys
 # ============================================================
 # 🔧 КОНФИГУРАЦИЯ
 # ============================================================
-TOKEN = os.environ.get('BOT_TOKEN', '')
-ADMIN_IDS = [int(id) for id in os.environ.get('ADMIN_IDS', '').split(',') if id]
+TOKEN = os.environ.get('8330930174:AAE78xbihnPhNns2QlCvv81msnAEmEAz-Zk', '')
+ADMIN_IDS = [int(id) for id in os.environ.get('6511166842', '').split(',') if id]
 
 if not TOKEN:
     print("❌ ОШИБКА: Не задан BOT_TOKEN в переменных окружения!")
